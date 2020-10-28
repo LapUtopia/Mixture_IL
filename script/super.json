@@ -1,0 +1,11 @@
+{
+  "device": "cuda:0",
+  "seed": 5,
+  "debug": true,
+  "display": false,
+  "resume": false,
+  "display_delay": 0.0,
+  "allow_render": false,
+  "eval_interval": 1,
+  "eval_episodes": 10
+}

@@ -1,0 +1,25 @@
+{
+  "env_name": "Pendulum-v0",
+  "k": 2,
+  "lr_actor": 5e-4,
+  "lr_critic": 1e-3,
+  "gamma": 0.99,
+  "batch_size": 32,
+  "buffer_maxlen": 50000,
+  "tau": 5e-3,
+  "save_every": 10000,
+  "more_epoch": 100000,
+  "inner_train_epoch": 20,
+  "render_every": 500,
+  "actor_head": [
+    128,
+    64
+  ],
+  "critic_tail": [
+    64,
+    32
+  ],
+  "allow_reparameterize": false,
+  "action_scale": 2,
+  "save_interval": 100
+}

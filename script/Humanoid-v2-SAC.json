@@ -1,0 +1,47 @@
+{
+  "env_name": "Humanoid-v2",
+  "baseline": "SAC",
+  "critic_use_action": true,
+  "k": 10,
+  "lr_actor": 3e-4,
+  "lr_critic": 3e-4,
+  "lr_alpha": 3e-4,
+  "gamma": 0.99,
+  "batch_size": 32,
+  "buffer_maxlen": 1000000,
+  "tau": 5e-3,
+  "save_interval": 200,
+  "more_epoch": 3000000,
+  "inner_train_epoch": 1000,
+  "soft_update_interval": 1,
+  "render_interval": 500,
+  "epoch_length": 1000,
+  "actor_head": [
+    [
+      256,
+      "ReLU"
+    ],
+    [
+      256,
+      "ReLU"
+    ]
+  ],
+  "critic_tail": [
+    [
+      256,
+      "ReLU"
+    ],
+    [
+      256,
+      "ReLU"
+    ],
+    [
+      1,
+      "None"
+    ]
+  ],
+  "log_std_max": 2.0,
+  "log_std_min": -20.0,
+  "reward_scale": 1.0,
+  "allow_reparameterize": false
+}
